@@ -422,7 +422,12 @@ chuck add typescript    # TypeScript type safety
 chuck add supabase      # Supabase DB / auth / RLS / edge functions
 chuck add git           # Git workflow conventions
 chuck add claude-api    # Anthropic Claude API usage
+chuck add praxis        # Praxis AI workflow language (.px) best practices
 ```
+
+The `praxis` pack activates whenever Claude touches `.px` files or discusses workflows, pipelines, or chains. It injects 14 rules covering verb syntax, PAR independence, SET/CAP/ASSERT/GATE/ROLLBACK usage, compile targets, and constitutional rules.
+
+The monitor also validates `.px` files on write — if `praxis validate` fails, Claude sees the error immediately before moving on.
 
 ---
 
